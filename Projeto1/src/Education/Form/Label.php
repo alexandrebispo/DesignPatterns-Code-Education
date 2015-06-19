@@ -10,11 +10,12 @@
     namespace Education\Form;
 
     use Education\Interfaces\LabelInterface;
+    use Education\Interfaces\FormFieldInterface;
 
     /**
     * Cria Objeto Label
     */
-    class Label implements LabelInterface
+    class Label implements LabelInterface, FormFieldInterface
     {
         public $for;
 

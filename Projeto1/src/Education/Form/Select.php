@@ -10,9 +10,10 @@
     namespace Education\Form;
 
     use Education\Interfaces\SelectInterface;
+    use Education\Interfaces\FormFieldInterface;
 
 
-    class Select implements SelectInterface
+    class Select implements SelectInterface, FormFieldInterface
     {
     	protected $values = array();
 

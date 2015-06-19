@@ -1,5 +1,5 @@
 <?php 
-	/**
+		/**
     *
     * @author: Alexandre Bispo
     * @email: alexandrebispo.mestre@gmail.com
@@ -9,13 +9,9 @@
 
     namespace Education\Interfaces;
 
-    interface SelectInterface
+    interface FormFieldInterface
     {
-
-        function getValue();
-
-        function addOptions($value);
-
+    	function getElement();
     }
 
- ?>
+?>

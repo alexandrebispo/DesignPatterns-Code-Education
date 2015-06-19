@@ -26,7 +26,5 @@
         function getRows();
 
         function getPlaceholder();
-
-        function getElement();
     }
  ?>

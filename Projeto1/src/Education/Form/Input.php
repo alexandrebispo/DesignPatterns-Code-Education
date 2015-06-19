@@ -10,11 +10,12 @@
     namespace Education\Form;
 
     use Education\Interfaces\InputInterface;
+    use Education\Interfaces\FormFieldInterface;
 
     /**
     * Cria Objeto Input
     */
-    class Input implements InputInterface
+    class Input implements InputInterface, FormFieldInterface
     {
     	protected $type;
     	protected $name;

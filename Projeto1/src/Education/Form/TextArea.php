@@ -10,11 +10,12 @@
     namespace Education\Form;
 
     use Education\Interfaces\TextAreaInterface;
+    use Education\Interfaces\FormFieldInterface;
 
     /**
     * @ Text Area
     */
-    class TextArea implements TextAreaInterface
+    class TextArea implements TextAreaInterface, FormFieldInterface
     {
     	protected $cols;
     	protected $name;

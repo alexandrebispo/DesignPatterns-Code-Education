@@ -23,6 +23,5 @@
 
         function getValue();
 
-        function getElement();
     }
  ?>

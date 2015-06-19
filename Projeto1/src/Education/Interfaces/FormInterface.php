@@ -10,11 +10,13 @@
 
 	namespace Education\Interfaces;
 
+	use Education\Interfaces\FormFieldInterface;
+
 
 	interface FormInterface
 	{	
 
-		public function addElement($element);
+		public function addElement(\Education\Interfaces\FormFieldInterface $field);
 
 		public function render();
 	}

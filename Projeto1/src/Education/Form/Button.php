@@ -11,11 +11,12 @@
     namespace Education\Form;
 
 	use Education\Interfaces\ButtonInterface;
+    use Education\Interfaces\FormFieldInterface;
 
 	/**
 	* Criando Botão
 	*/
-	class Button 
+	class Button implements ButtonInterface, FormFieldInterface
 	{
 
 		protected $type;

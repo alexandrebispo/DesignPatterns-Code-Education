@@ -15,7 +15,6 @@
 
     	function getFor();
 
-    	function getElement();
     }
 
  ?>

@@ -25,9 +25,9 @@
             $this->method = $method;
      	}   
 
-	    public function addElement($element)
+	    public function addElement(\Education\Interfaces\FormFieldInterface $field)
 	    {
-	        $this->elements[] = $element;
+	        $this->elements[] = $field;
 	    }
 
 	    public function render()

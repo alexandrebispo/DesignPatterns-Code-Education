@@ -27,8 +27,6 @@
         function getValue();
 
         function getPlaceholder();
-
-        function getElement();
      
     }
 
