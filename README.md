@@ -49,4 +49,15 @@ Padrões GRASP	Controller · Creator · Expert (GRASP) · High Cohesion · Indir
 #Acoplamento:
 Para resolver problema de acoplamento, e necessário usar dependency injection.
 
+Para resolver um problema de multipla dependencia, é recomendado usar o Dependency Injection Container, existem alguns prontos.
+
+são eles:
+
+	- https://r.je/dice.html (de alta performace tem apenas componentes basicos)
+	- http://pimple.sensiolabs.org/
+	- http://php-di.org/ (usado pelo ZF1, Symfony 2, Silex)
+
+
+
+AGENDAMENTO DO RG: Nº 20151195666
 

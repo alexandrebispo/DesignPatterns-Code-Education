@@ -12,6 +12,8 @@
 
 	use Education\Interfaces\FormInterface;
 
+    use Education\Interfaces\FormFieldInterface;
+
     class Form implements FormInterface
     {
 
@@ -25,7 +27,10 @@
             $this->method = $method;
      	}   
 
-	    public function addElement(\Education\Interfaces\FormFieldInterface $field)
+        /**
+        *  Na indução de tipo, apenas coloque a barra invertida (\) quando o tipo for class;
+        */ 
+	    public function addElement(FormFieldInterface $field)
 	    {
 	        $this->elements[] = $field;
 	    }
