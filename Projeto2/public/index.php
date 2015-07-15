@@ -116,8 +116,9 @@ $validator = new Education\Validation\Validator($request);
 		<hr />
 
 		<?php 
-			$form2 = new Education\Form\Form($validator);
-			echo $form2->openForm();
+
+			$form2 = clone $form;
+				echo $form2->openForm();
 				$field = $form2->createField('input');
 				$field->setName('Input name');
 				$field->setType('text');
@@ -137,12 +138,14 @@ $validator = new Education\Validation\Validator($request);
 				$field->setName('Button');
 				$field->setValue('Enviar');
 				echo $field->getElement();
-			echo $form2->endForm();	
+
+				echo $form2->endForm();
+
 		?>
 
 		<hr />
 		<?php 
-			$form3 = new Education\Form\Form($validator);
+			$form3 = clone $form;
 			echo $form3->openForm();
 				$field = $form3->createField('input');
 				$field->setName('Input email');
@@ -169,7 +172,7 @@ $validator = new Education\Validation\Validator($request);
 		<hr />
 		
 		<?php 
-			$form4 = new Education\Form\Form($validator);
+			$form4 = clone $form;
 			echo $form4->openForm();
 				$field = $form4->createField('Select');
 				$field->addOptions('Masculino');
