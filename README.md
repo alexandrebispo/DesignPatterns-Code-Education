@@ -58,6 +58,3 @@ são eles:
 	- http://php-di.org/ (usado pelo ZF1, Symfony 2, Silex)
 
 
-
-AGENDAMENTO DO RG: Nº 20151195666
-
